@@ -1,3 +1,6 @@
 [submodule "aula-01/conversao-temperatura"]
 	path = aula-01/conversao-temperatura
 	url = https://github.com/KubeDev/conversao-temperatura
+[submodule "aula-02/rotten-potatoes"]
+	path = aula-02/rotten-potatoes
+	url = https://github.com/KubeDev/rotten-potatoes.git
