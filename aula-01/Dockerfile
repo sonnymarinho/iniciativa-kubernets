@@ -1,3 +1,5 @@
-ARG TAG=latest
-FROM ubuntu:$TAG
-RUN apt update && apt install -y curl
+FROM golang:1.7.3
+WORKDIR /app
+COPY main.go .
+RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o main main.go
+CMD ["./main"]
